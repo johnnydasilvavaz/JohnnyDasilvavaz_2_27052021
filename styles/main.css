@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-VariableFont_wght.ttf) format("truetype");
+}
+
+body
+{
+    display: flex;
+    font-family: Raleway;
+    padding: 0px;
+    margin: 0px;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 125px;
+    width: 100%;
+}
+
+ul
+{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+}
+
+li
+{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.menu li:hover
+{
+    border-top: 4px solid #0065FC;
+}
+
+.search-btn
+{
+    color: white;
+    background-color: #0065FC;
+    border: 0px solid;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo
+{
+    height: 75px;
+}
+
+.menu
+{
+    display: flex;
+    width: 30%;
+    justify-content: right;
+}
+
+.search
+{
+    display: flex;
+    height: 40px;
+}
+
+.filter
+{
+    display: flex;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.align-center
+{
+    align-items: center;
+}
+
+.heber
+{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+.heber-items
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.pop
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+.card-heber
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    width: 30%;
+}
+
+.card-pop
+{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    width: 90%;
+}
+
+.card-act
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.boxshadow
+{
+    box-shadow: 0px 5px 10px rgba(150,150,150,0.2);
+}
+
+.img-v-border
+{
+    border-radius: 20px 20px 0px 0px;
+    padding: 5px 5px 0px 5px;
+}
+
+.img-h-border
+{
+    border-radius: 20px 0px 0px 20px;
+    padding: 5px 0px 5px 5px;
+    width: 35%;
+    object-fit: cover;
+}
+
+.img-v
+{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.section-title
+{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.card-title
+{
+    font-size: 1.1em;
+    font-weight: bold;
+}
