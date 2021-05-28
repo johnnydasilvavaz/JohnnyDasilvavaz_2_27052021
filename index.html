@@ -3,60 +3,84 @@
     <head>
         <meta charset="utf-8" />
         <title>Reservia</title>
-        <script src="https://kit.fontawesome.com/35379ab04b.js" crossorigin="anonymous"></script>
+        <link href="fontawesome/css/all.css" rel="stylesheet">
         <link href="styles/main.css" rel="stylesheet">
     </head>
 
     <body>
         <div class="content">
+            <!--Header + nav-->
             <header>
                 <img class="logo" src="images/logo/Reservia@3x.png" alt="Reservia">
                 <ul class="menu">
-                    <li><a href="">Hébergements</a></li>
-                    <li><a href="">Activités</a></li>
+                    <li class="selected"><a href="#hebergements">Hébergements</a></li>
+                    <li><a href="#activites">Activités</a></li>
                     <li><a href="">S'inscrire</a></li>
                 </ul>
             </header>
-            <p class="section-title">
-                Trouvez votre hébergement pour des vacances de rêve
-            </p>
-            <p>
-                En plein centre ville ou en pleine nature
-            </p>
-            <div class="search">
-                <div>
-                    <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <input type="search" value="Marseille, France">
-                <button class="search-btn">Rechercher</button>
-            </div>
-            <div class="flex">
-                <p>Filtres</p>
-                <div class="flex align-center">
-                    <i class="fa-solid fa-money-bill-wave"></i>
-                    <p>Economique</p>
-                </div>
-                <div class="flex align-center">
-                    <i class="fa-solid fa-child"></i>
-                    <p>Familial</p>
-                </div>
-                <div class="flex align-center">
-                    <i class="fa-solid fa-heart"></i>
-                    <p>Romantique</p>
-                </div>
-                <div class="flex align-center">
-                    <i class="fa-solid fa-dog"></i>
-                    <p>Animaux autorisés</p>
-                </div>
-            </div>
-            <div class="flex">
-                <i class="fa-solid fa-info"></i>
-                <p>
-                    Plus de 500 logements sont disponibles dans cette ville
+
+            <!--Slogan-->
+            <section class="pad">
+                <p class="section-title">
+                    Trouvez votre hébergement pour des vacances de rêve
                 </p>
-            </div>
-            <section class="flex">
-                <div class="heber">
+                <p>
+                    En plein centre ville ou en pleine nature
+                </p>
+            </section>
+
+            <!--Section Recherche + filtres-->
+            <section class="pad">
+                <!--Recherche-->
+                <div class="search">
+                    <div class="search-logo flex align-center">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <input class="search-input" type="search" value="Marseille, France">
+                    <button class="search-btn">Rechercher</button>
+                </div>
+                <!--Filtres-->
+                <div class="flex filter">
+                    <p class="filter-text">Filtres</p>
+                    <div class="flex align-center filter-pill">
+                        <div class="filter-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <p class="filter-text">Economique</p>
+                    </div>
+                    <div class="flex align-center filter-pill">
+                        <div class="filter-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <p class="filter-text">Familial</p>
+                    </div>
+                    <div class="flex align-center filter-pill">
+                        <div class="filter-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <p class="filter-text">Romantique</p>
+                    </div>
+                    <div class="flex align-center filter-pill">
+                        <div class="filter-icon">
+                            <i class="fas fa-dog"></i>
+                        </div>
+                        <p class="filter-text">Animaux autorisés</p>
+                    </div>
+                </div>
+                <!--Nombre de résultats-->
+                <div class="flex align-center">
+                    <div class="info">
+                        <i class="fas fa-info"></i>
+                    </div>
+                    <p>
+                        Plus de 500 logements sont disponibles dans cette ville
+                    </p>
+                </div>
+            </section>
+
+            <!--Section Hébergements + populaires -->
+            <section id="hebergements" class="flex pad">
+                <div class="heber margin">
                     <p class="section-title">
                         Hébergements à Marseille
                     </p>
@@ -134,15 +158,19 @@
                             </p>
                         </div>
                     </div>
-                    <p>
+                    <p class="card-title">
                         Afficher plus
                     </p>
                 </div>
-                <aside class="pop">
-                    <p class="section-title">
-                        Les plus populaires
-                    </p>
-                    <i class="fa-solid fa-chart-line-up"></i>
+
+                <!--Populaires-->
+                <aside class="pop margin">
+                    <div>
+                        <p class="section-title">
+                            Les plus populaires
+                        </p>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
                     <div class="card-pop boxshadow">
                         <img class="img-h-border" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
                         <div>
@@ -187,45 +215,49 @@
                     </div>
                 </aside>
             </section>
-            <section>
+
+            <!--Section activités-->
+            <section id="activites" class="pad">
                 <p class="section-title">
                     Activités à Marseille
                 </p>
                 <div class="flex">
-                    <div class="flex">
-                        <div class="card-heber boxshadow">
+                    <div class="flex-col">
+                        <div class="card-act boxshadow">
                             <img class="img-v" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
                             <p class="card-title">Vieux Port</p>
                         </div>
                     </div>
-                    <div>
-                        <div class="card-heber boxshadow">
+                    <div class="flex-col">
+                        <div class="card-act boxshadow">
                             <img class="img-v" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
                             <p class="card-title">Fort de Pomègues</p>
                         </div>
-                        <div class="card-heber boxshadow">
+                        <div class="card-act boxshadow">
                             <img class="img-v" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
                             <p class="card-title">Îles du Frioul</p>
                         </div>
                     </div>
-                    <div>
-                        <div class="card-heber boxshadow">
+                    <div class="flex-col">
+                        <div class="card-act boxshadow">
                             <img class="img-v" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
                             <p class="card-title">Parc National des Calanques</p>
                         </div>
                     </div>
-                    <div>
-                        <div class="card-heber boxshadow">
+                    <div class="flex-col">
+                        <div class="card-act boxshadow">
                             <img class="img-v" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
                             <p class="card-title">Notre-Dame-de-la-Garde</p>
                         </div>
-                        <div class="card-heber boxshadow">
+                        <div class="card-act boxshadow">
                             <img class="img-v" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
                             <p class="card-title">Parc Longchamp</p>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <!--Pied de page-->
             <footer>
                 <div>
                     <p class="card-title">

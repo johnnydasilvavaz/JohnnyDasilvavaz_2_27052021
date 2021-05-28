@@ -17,15 +17,17 @@ header
     justify-content: space-between;
     align-items: center;
     height: 125px;
-    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-ul
-{
+footer{
     display: flex;
-    list-style: none;
-    height: 100%;
-    align-items: center;
+    background-color: #F2F2F2;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 li
@@ -35,17 +37,83 @@ li
     align-items: center;
 }
 
+.search
+{
+    display: flex;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.search-input
+{
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 1em;
+    border-bottom: 1px solid #F2F2F2;
+    border-top: 1px solid #F2F2F2;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+    width: 235px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.search-logo
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    width: 50px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.search-btn
+{
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 1em;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    background-color: #0065FC;
+    border: 0px solid;
+    border-radius: 0px 15px 15px 0px;
+}
+
 .menu li:hover
 {
     border-top: 4px solid #0065FC;
 }
 
-.search-btn
+.menu li:last-child a
 {
-    color: white;
-    background-color: #0065FC;
-    border: 0px solid;
-    border-radius: 0px 10px 10px 0px;
+    color: #0065FC;
+    font-weight: bold;
+}
+
+.menu a
+{
+    text-decoration: none;
+    color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.menu li:hover a
+{
+    color: #0065FC;
+}
+
+.selected
+{
+    border-top: 4px solid #0065FC;
+}
+
+.selected a
+{
+    color: #0065FC;
 }
 
 .content
@@ -59,7 +127,7 @@ li
 
 .logo
 {
-    height: 75px;
+    height: 50px;
 }
 
 .menu
@@ -67,12 +135,9 @@ li
     display: flex;
     width: 30%;
     justify-content: right;
-}
-
-.search
-{
-    display: flex;
-    height: 40px;
+    list-style: none;
+    height: 100%;
+    align-items: center;
 }
 
 .filter
@@ -85,9 +150,24 @@ li
     display: flex;
 }
 
+.flex-col
+{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
 .align-center
 {
     align-items: center;
+}
+
+.pad
+{
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .heber
@@ -139,6 +219,8 @@ li
     flex-direction: column;
     background-color: white;
     border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .boxshadow
@@ -169,10 +251,66 @@ li
 {
     font-size: 1.3em;
     font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.margin
+{
+    padding: 30px;
 }
 
 .card-title
 {
     font-size: 1.1em;
     font-weight: bold;
+}
+
+.filter
+{
+    margin-bottom: 20px;
+}
+
+.filter-icon
+{
+    display: flex;
+    color: #0065FC;
+    border: 2px solid #DEEBFF;
+    background-color: #DEEBFF;
+    border-radius: 999px;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2px;
+}
+
+.filter-text
+{
+    margin-left: 10px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.filter-pill
+{
+    border: 2px solid rgb(217,217,217);
+    height: 50px;
+    border-radius: 999px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.info
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(217,217,217);
+    border-radius: 999px;
+    color: #0065FC;
+    font-size: 0.8em;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
