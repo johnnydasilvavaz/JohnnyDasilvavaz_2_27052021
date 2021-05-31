@@ -6,8 +6,8 @@
 body
 {
     display: flex;
+    flex-direction: column;
     font-family: Raleway;
-    padding: 0px;
     margin: 0px;
 }
 
@@ -21,8 +21,7 @@ header
     padding-right: 50px;
 }
 
-footer{
-    display: flex;
+.footer{
     background-color: #F2F2F2;
     padding-left: 50px;
     padding-right: 50px;
@@ -59,10 +58,14 @@ li
     padding-left: 10px;
 }
 
+.input[type="submit"].search-input:hover
+{
+    border: 2px solid red;
+}
+
 .search-logo
 {
     display: flex;
-    align-content: center;
     align-items: center;
     background-color: #F2F2F2;
     width: 50px;
@@ -116,10 +119,21 @@ li
     color: #0065FC;
 }
 
+.star-selected
+{
+    color: #0065FC;
+}
+
+.star-unselected
+{
+    color: rgb(217,217,217);
+}
+
 .content
 {
     display: flex;
     flex-direction: column;
+    flex-basis: auto;
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
@@ -130,14 +144,21 @@ li
     height: 50px;
 }
 
+.nav
+{
+    display: flex;
+    height: 100%;
+}
+
 .menu
 {
     display: flex;
-    width: 30%;
+    flex-basis: 30%;
     justify-content: right;
     list-style: none;
     height: 100%;
     align-items: center;
+    margin: 0px;
 }
 
 .filter
@@ -154,6 +175,10 @@ li
 {
     display: flex;
     flex-direction: column;
+}
+
+.act-col
+{
     overflow: auto;
     align-items: stretch;
     justify-content: space-between;
@@ -164,25 +189,60 @@ li
     align-items: center;
 }
 
+.align-space-between
+{
+    align-items: space-between;
+}
+
+.align-space-around
+{
+    align-items: space-around;
+}
+
+.justify-center
+{
+    justify-content: center;
+}
+
+.justify-space-around
+{
+    justify-content: space-around;
+}
+
+.justify-space-between
+{
+    justify-content: space-between;
+}
+
 .pad
 {
     padding-left: 50px;
     padding-right: 50px;
 }
 
+#hebergements
+{
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
 .heber
 {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    align-items: space-between;
+    flex-basis: 65%;
     background-color: #F2F2F2;
     border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .heber-items
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -191,9 +251,10 @@ li
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 30%;
     background-color: #F2F2F2;
     border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .card-heber
@@ -202,7 +263,8 @@ li
     flex-direction: column;
     background-color: white;
     border-radius: 20px;
-    width: 30%;
+    margin-top: 20px;
+    padding: 5px;
 }
 
 .card-pop
@@ -210,7 +272,7 @@ li
     display: flex;
     background-color: white;
     border-radius: 20px;
-    width: 90%;
+    padding: 5px;
 }
 
 .card-act
@@ -219,8 +281,6 @@ li
     flex-direction: column;
     background-color: white;
     border-radius: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .boxshadow
@@ -230,28 +290,32 @@ li
 
 .img-v-border
 {
-    border-radius: 20px 20px 0px 0px;
-    padding: 5px 5px 0px 5px;
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .img-h-border
 {
-    border-radius: 20px 0px 0px 20px;
-    padding: 5px 0px 5px 5px;
-    width: 35%;
+    border-radius: 15px 0px 0px 15px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .img-v
 {
     border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .section-title
 {
     font-size: 1.3em;
     font-weight: bold;
-    margin-bottom: 0px;
 }
 
 .margin
@@ -263,6 +327,40 @@ li
 {
     font-size: 1.1em;
     font-weight: bold;
+}
+
+.card-img-heber
+{
+    max-width: 235px;
+    max-height: 115px;
+}
+
+.card-img-pop
+{
+    max-width: 128px;
+    max-height: 135px;
+}
+
+.card-img-act
+{
+    max-width: 305px;
+    max-height: 390px;
+}
+
+.card-body
+{
+    margin: 10px;
+    /*max-height: 80px;*/
+}
+
+.card-desc
+{
+
+}
+
+.card-star
+{
+
 }
 
 .filter
@@ -313,4 +411,14 @@ li
     width: 20px;
     margin-right: 10px;
     margin-left: 10px;
+}
+
+.overflow-visible
+{
+    overflow: visible;
+}
+
+#activites
+{
+    margin-bottom: 40px;
 }
