@@ -103,8 +103,8 @@ li
 .slogan__title
 {
     margin: 0;
-    font-size: 1.35em;
-    font-weight: 750;
+    font-size: 1.4em;
+    font-weight: 700;
 }
 
 .slogan__subtitle
@@ -289,7 +289,6 @@ input[type=search]:focus
 {
     display: flex;
     flex-direction: column;
-    align-items: space-between;
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 40px;
@@ -298,8 +297,8 @@ input[type=search]:focus
 
 .heber__h2
 {
-    font-size: 1.35em;
-    font-weight: 750;
+    font-size: 1.4em;
+    font-weight: 700;
     margin-top: 0px;
     padding-bottom: 5px;
 }
@@ -387,13 +386,15 @@ input[type=search]:focus
 
 .pop__title__h2
 {
+    font-size: 1.4em;
+    font-weight: 700;
     margin-top: 0px;
     padding-bottom: 5px;
 }
 
 .pop__chart
 {
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 .pop__items
@@ -447,6 +448,12 @@ input[type=search]:focus
     padding-right: 50px;
 }
 
+.act__title
+{
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
 .act__card
 {
     display: flex;
@@ -471,7 +478,7 @@ input[type=search]:focus
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    gap: 40;
+    gap: 40px;
 }
 
 .act__col
@@ -561,12 +568,6 @@ input[type=search]:focus
     color: rgb(217,217,217);
 }
 
-.section-title
-{
-    font-size: 1.35em;
-    font-weight: 750;
-}
-
 .footer{
     display: flex;
     justify-content: center;
@@ -613,6 +614,8 @@ input[type=search]:focus
     font-size: 1.1em;
     font-weight: 700;
     margin: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .overlay
